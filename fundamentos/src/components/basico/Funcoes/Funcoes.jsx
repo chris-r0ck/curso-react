@@ -1,6 +1,6 @@
 import React from "react";
 
-const testeFunc = <><hr /><p>Teste de Funções</p></>
+const testeFunc = <><p>Teste de Funções</p></>
 
 //Tipos de Funções
 

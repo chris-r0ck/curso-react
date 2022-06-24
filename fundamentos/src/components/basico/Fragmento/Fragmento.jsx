@@ -4,7 +4,6 @@ import React from "react";
 const a =  (props) => {
    return (
    <>
-        <h3>Fragmento</h3>
         <p>Fragmento JSX, precisa sempre estar envolvido numa tag pai</p>
         <p>Nesse caso, é uma tag especial vazia, para o caso de não necessitar de uma tag div</p>
 

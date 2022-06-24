@@ -6,9 +6,10 @@ import React from 'react'
 
 import App from './App'
 
-
+//Utilizando o componente "pai" App.jsx para agregar outros componentes nele
 ReactDOM.render(
-        <div>
+    
+        <div className='container'>        
             <App />
         </div>
 

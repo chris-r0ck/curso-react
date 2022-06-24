@@ -13,6 +13,9 @@ import Fragmento from './components/basico/Fragmento/Fragmento'
 
 import Funcoes from './components/basico/Funcoes/Funcoes'
 
+import Aleatorio from "./components/basico/Aleatorio/Aleatorio"
+
+import Card from './components/layout/Card'
 
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
 //que será injetado o código react
@@ -28,14 +31,28 @@ ReactDOM.render(
 const App = (params) => {
     return (
     <>
-        <Primeiro></Primeiro>
         
+        <Card titulo="Aleatorio" bgColor="#258">
+            <Aleatorio min={10} max={200} />
+        </Card>
+
+        <Card titulo="#0 - Primeiro Exercicio" bgColor="#f0a">
+        <Primeiro></Primeiro>
+        </Card>
+
         {/* Parametros string com aspas, parametros bool ou num, com chaves */}
+        <Card titulo="#01 - Notas Com Parametros" bgColor="gray">
         <Notas aluno="Cristiano" nota={ 8.5 }></Notas>
         <Notas aluno="Priscila" nota={ 9.5 }></Notas>
-        <Fragmento></Fragmento>
-        <Funcoes />
+        </Card>
+
+        <Card titulo="#02 - Fragmentos JSX" bgColor="black">
+            <Fragmento></Fragmento>
+        </Card>
         
+        <Card titulo="#03 - Funções JS e JSX" bgColor="yellow">
+            <Funcoes />
+        </Card>
     </>
 )}
 

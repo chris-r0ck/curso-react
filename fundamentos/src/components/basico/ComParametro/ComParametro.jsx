@@ -11,12 +11,8 @@ export default function Notas (props){
 
 
     return (
-        <div>
-            <hr/>
-            <h2>Componente: ComParametro.jsx - Teste de Notas</h2>
             <p>
-                O Aluno {props.aluno} tem nota {props.nota} e está {status}</p>
-            <hr/>
-        </div>
+                O Aluno {props.aluno} tem nota {props.nota} e está {status}
+            </p>
     )
 }
