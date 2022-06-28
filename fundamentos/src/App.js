@@ -15,6 +15,8 @@ import Funcoes from './components/basico/Funcoes/Funcoes'
 
 import Aleatorio from "./components/basico/Aleatorio/Aleatorio"
 
+import Familia from "./components/basico/Familia"
+
 import Card from './components/layout/Card'
 
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
@@ -27,10 +29,14 @@ ReactDOM.render(
 */
 
 //Codigo acima com tags JSX
+//O Componente CARD só serve para dar estilo/layout a outros componentes
 
 const App = (params) => {
     return (
     <>
+        <Card titulo="Familia">
+            <Familia ></Familia>
+        </Card>
         
         <Card titulo="Aleatorio" bgColor="#258">
             <Aleatorio min={10} max={200} />
