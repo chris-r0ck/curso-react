@@ -2,7 +2,9 @@ import React from "react";
 
 const FamiliaMembro = (props) => {  
     return (
-        <span>Pedro <strong>Silva</strong></span>
+        <div>
+        {props.nome} <strong>{props.sobrenome}</strong>
+        </div>
     )
 
 

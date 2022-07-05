@@ -17,7 +17,11 @@ import Aleatorio from "./components/basico/Aleatorio/Aleatorio"
 
 import Familia from "./components/basico/Familia"
 
+import FamiliaMembro from './components/basico/FamiliaMembro'
+
 import Card from './components/layout/Card'
+
+import Repeticao from './components/basico/repeticao/Repeticao'
 
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
 //que será injetado o código react
@@ -34,8 +38,29 @@ ReactDOM.render(
 const App = (params) => {
     return (
     <>
+        <Card titulo="#08 - Lista Repetição">
+            <Repeticao>
+                
+            </Repeticao>
+        </Card>
+
+
+        <Card titulo="Familia Membro pelo pai">
+            <Familia sobrenome="OnePunchman">
+                <FamiliaMembro nome="Xaranco" />
+                <FamiliaMembro nome="King" />
+                <FamiliaMembro nome="Saitama" />
+            </Familia>
+        </Card>
+
+
         <Card titulo="Familia">
-            <Familia ></Familia>
+            <Familia nome="Cristiano" sobrenome="Moura"></Familia>
+            <Familia nome="Priscila" sobrenome="Moura"></Familia>
+            <p>Tem um Spread Operator aqui ...props no componente Familia
+            Que irá levar as props do componente pai para os filhos</p>
+            <Familia nome="Melissa" sobrenome="Moura"></Familia>
+            
         </Card>
         
         <Card titulo="Aleatorio" bgColor="#258">

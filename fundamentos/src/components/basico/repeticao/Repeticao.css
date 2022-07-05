@@ -1,0 +1,7 @@
+.lista ul li {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font: 1.2em arial;
+}

@@ -1,10 +1,16 @@
 import React from "react";
 
-import FamiliaMembro from "./FamiliaMembro";
+//Passando os parametros do pai e passando para o filho com o metodo Children.map
+//o metodo map sempre informa uma key como segundo parametro
 
 const Familia = (props) => { 
     return (
-        <FamiliaMembro></FamiliaMembro>
+        <>{
+            React.Children.map(props.children, (el, i) => {
+                return React.cloneElement(el, props)
+            })
+        }
+        </>
     )
 }
 
