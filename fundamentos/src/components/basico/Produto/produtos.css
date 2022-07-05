@@ -1,0 +1,15 @@
+.TabelaProdutos thead {
+    background-color: rgb(97, 175, 108);
+}
+.TabelaProdutos table {
+    width: 100%;
+}
+
+.TabelaProdutos tbody {
+    background-color: aliceblue;
+    color: rgb(36, 35, 35);
+}
+
+.TabelaProdutos .par {
+    background-color: aquamarine;
+}
