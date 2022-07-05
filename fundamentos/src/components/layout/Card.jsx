@@ -18,9 +18,9 @@ export default function Card(props) {
     
         <h1 className="cardTitle">{props.titulo}</h1>
         
-            <p className="cardContent">
+            <span className="cardContent">
                 {props.children}
-            </p>
+            </span>
         </div>
         </>
     )

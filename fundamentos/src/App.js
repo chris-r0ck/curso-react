@@ -23,6 +23,8 @@ import Card from './components/layout/Card'
 
 import Repeticao from './components/basico/repeticao/Repeticao'
 
+import Produtos from './components/basico/Produto/Produtos'
+
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
 //que será injetado o código react
 /*
@@ -38,6 +40,10 @@ ReactDOM.render(
 const App = (params) => {
     return (
     <>
+        <Card titulo="Exercicio Lista">
+            <Produtos></Produtos>
+        </Card>
+
         <Card titulo="#08 - Lista Repetição">
             <Repeticao>
                 
