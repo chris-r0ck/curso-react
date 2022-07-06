@@ -25,6 +25,10 @@ import Repeticao from './components/basico/repeticao/Repeticao'
 
 import Produtos from './components/basico/Produto/Produtos'
 
+import Condicional from './components/basico/Condicional/Condicional'
+
+import UsuarioInfo from './components/basico/Condicional/UsuarioInfo'
+
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
 //que será injetado o código react
 /*
@@ -40,6 +44,11 @@ ReactDOM.render(
 const App = (params) => {
     return (
     <>
+        <Card titulo="Renderização Condicional" bgColor="#F85">
+            <Condicional num={12}></Condicional>
+            <UsuarioInfo />
+        </Card>
+
         <Card titulo="Exercicio Lista">
             <Produtos></Produtos>
         </Card>
