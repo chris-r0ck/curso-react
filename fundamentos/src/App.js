@@ -29,6 +29,8 @@ import Condicional from './components/basico/Condicional/Condicional'
 
 import UsuarioInfo from './components/basico/Condicional/UsuarioInfo'
 
+import DiretaPai from './components/comunicacao/DiretaPai'
+
 //Chama o metodo render e passa 2 paramentros, o primeiro é o conteudo, o segundo, o ID da div (ou container)
 //que será injetado o código react
 /*
@@ -44,6 +46,10 @@ ReactDOM.render(
 const App = (params) => {
     return (
     <>
+        <Card>
+            <DiretaPai />
+        </Card>
+
         <Card titulo="Renderização Condicional" bgColor="#F85">
             <Condicional num={12}></Condicional>
             <UsuarioInfo />
